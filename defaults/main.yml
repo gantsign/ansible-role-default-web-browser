@@ -1,2 +1,3 @@
 ---
-# defaults file for ansible-role-default-web-browser
+# The web browser to make the default (i.e. the name of the .desktop file)
+default_web_browser: google-chrome
