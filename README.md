@@ -27,6 +27,11 @@ Requirements
 
     * Xfce4 (i.e. the desktop on XUbuntu)
 
+* Installed web browser  
+
+    * This role doesn't install the web browser; you need to have already
+      installed your chosen web browser before using this role.
+
 Role Variables
 --------------
 
