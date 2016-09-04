@@ -1,0 +1,16 @@
+---
+ansible:
+  playbook: playbook.yml
+
+docker:
+  containers:
+  - name: ansible-role-default-web-browser-01
+    ansible_groups:
+      - group1
+    image: ubuntu
+    image_version: latest
+  - name: ansible-role-default-web-browser-02
+    ansible_groups:
+      - group2
+    image: ubuntu
+    image_version: latest
