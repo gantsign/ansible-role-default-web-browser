@@ -12,7 +12,7 @@ Requirements
 
 * Ansible
 
-    * Minimum 2.0
+    * Minimum 2.1
     * Maximum 2.3 (currently using `always_run`, which is scheduled for removal
       in 2.4)
 
