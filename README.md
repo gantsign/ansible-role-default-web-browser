@@ -10,7 +10,11 @@ This role sets the default web browser for Ubuntu Unity and Xfce4.
 Requirements
 ------------
 
-* Ansible >= 2.0
+* Ansible
+
+    * Minimum 2.0
+    * Maximum 2.3 (currently using `always_run`, which is scheduled for removal
+      in 2.4)
 
 * Ubuntu
 
@@ -27,7 +31,7 @@ Requirements
 
     * Xfce4 (i.e. the desktop on XUbuntu)
 
-* Installed web browser  
+* Installed web browser
 
     * This role doesn't install the web browser; you need to have already
       installed your chosen web browser before using this role.
