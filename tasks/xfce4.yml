@@ -32,7 +32,7 @@
   args:
     # No ansible module for splitting files
     warn: false
-  always_run: yes
+  check_mode: no
   changed_when: no
 
 - name: copy second part of browser desktop file
@@ -41,7 +41,7 @@
   args:
     # No ansible module for splitting files
     warn: false
-  always_run: yes
+  check_mode: no
   changed_when: no
 
 - name: set xfce4 type
@@ -67,13 +67,13 @@
   shell: |
     grep -E "^Exec(\[[^]=]*])?=" "{{ default_web_browser_desktop_file }}" | head -n 1 | cut -d= -f 2- | sed -e 's/%[FfUu]/"%s"/g'
   register: browser_command_with_param
-  always_run: yes
+  check_mode: no
   changed_when: no
 
 - name: query command command_with_param
   shell: 'echo "{{ browser_command_with_param.stdout }}" | { read first rest; echo "$first"; }'
   register: browser_command
-  always_run: yes
+  check_mode: no
   changed_when: no
 
 - name: set xfce4 commands
@@ -97,7 +97,7 @@
     cat "{{ default_web_browser_tmp_desktop_file_part1 }}" \
         "{{ default_web_browser_tmp_desktop_file_part2 }}" \
         > "{{ default_web_browser_tmp_desktop_file }}"
-  always_run: yes
+  check_mode: no
   changed_when: no
 
 - name: create custom Xfce4 helpers directory
