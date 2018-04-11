@@ -2,7 +2,7 @@
 - name: create XDG applications directory
   become: yes
   file:
-    path: "{{ default_web_browser_custom_config_dir }}"
+    path: '{{ default_web_browser_custom_config_dir }}'
     state: directory
     owner: root
     group: root
