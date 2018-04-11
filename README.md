@@ -12,7 +12,7 @@ Requirements
 
 * Ansible
 
-    * Minimum 2.2
+    * Minimum 2.3
 
 * Ubuntu
 
