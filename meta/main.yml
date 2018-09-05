@@ -15,4 +15,5 @@ galaxy_info:
     - xfce4
     - xubuntu
     - browser
+    - system
 dependencies: []
