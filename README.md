@@ -20,9 +20,9 @@ Requirements
 
 * Supported desktop
 
-    * Ubuntu Unity (i.e. the default desktop on Ubuntu)
+    * Gnome
 
-        Note: other Gnome based desktops may work but have not been tested.
+    * Ubuntu Unity
 
     * Xfce4 (i.e. the desktop on XUbuntu)
 
