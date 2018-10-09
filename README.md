@@ -10,9 +10,7 @@ This role sets the default web browser for Ubuntu Unity and Xfce4.
 Requirements
 ------------
 
-* Ansible
-
-    * Minimum 2.4
+* Ansible >= 2.5
 
 * Ubuntu
 
