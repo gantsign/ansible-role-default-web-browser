@@ -65,13 +65,20 @@
 
 - name: query command with param from desktop file
   shell: |
+    set -euo pipefail
     grep -E "^Exec(\[[^]=]*])?=" "{{ default_web_browser_desktop_file }}" | head -n 1 | cut -d= -f 2- | sed -e 's/%[FfUu]/"%s"/g'
+  args:
+    executable: /bin/bash
   register: browser_command_with_param
   check_mode: no
   changed_when: no
 
 - name: query command command_with_param
-  shell: 'echo "{{ browser_command_with_param.stdout }}" | { read first rest; echo "$first"; }'
+  shell: |
+    set -euo pipefail
+    echo "{{ browser_command_with_param.stdout }}" | { read first rest; echo "$first"; }
+  args:
+    executable: /bin/bash
   register: browser_command
   check_mode: no
   changed_when: no
