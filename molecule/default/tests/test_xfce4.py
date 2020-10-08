@@ -1,10 +1,4 @@
 import pytest
-import os
-
-import testinfra.utils.ansible_runner
-
-testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
-    os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
 def test_helpers_file_permissions(host):
@@ -14,7 +8,7 @@ def test_helpers_file_permissions(host):
     assert config.is_file
     assert config.user == 'root'
     assert config.group == 'root'
-    assert oct(config.mode) == '0644'
+    assert oct(config.mode) == '0o644'
     assert config.contains('WebBrowser=google-chrome')
 
 
@@ -26,7 +20,7 @@ def test_desktop_file_permissions(host):
     assert desktop.is_file
     assert desktop.user == 'root'
     assert desktop.group == 'root'
-    assert oct(desktop.mode) == '0644'
+    assert oct(desktop.mode) == '0o644'
 
 
 @pytest.mark.parametrize('expected', [
