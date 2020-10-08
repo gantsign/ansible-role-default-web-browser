@@ -1,7 +1,7 @@
 Ansible Role: Default Web Browser
 =================================
 
-[![Build Status](https://travis-ci.org/gantsign/ansible-role-default-web-browser.svg?branch=master)](https://travis-ci.org/gantsign/ansible-role-default-web-browser)
+[![Build Status](https://travis-ci.com/gantsign/ansible-role-default-web-browser.svg?branch=master)](https://travis-ci.com/gantsign/ansible-role-default-web-browser)
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.default--web--browser-blue.svg)](https://galaxy.ansible.com/gantsign/default-web-browser)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-default-web-browser/master/LICENSE)
 
