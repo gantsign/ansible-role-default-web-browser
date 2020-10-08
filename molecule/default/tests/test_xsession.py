@@ -1,10 +1,4 @@
 import pytest
-import os
-
-import testinfra.utils.ansible_runner
-
-testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
-    os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
 def test_xsession_file_permissions(host):
@@ -14,7 +8,7 @@ def test_xsession_file_permissions(host):
     assert config.is_file
     assert config.user == 'root'
     assert config.group == 'root'
-    assert oct(config.mode) == '0644'
+    assert oct(config.mode) == '0o644'
 
 
 @pytest.mark.parametrize('expected', [
