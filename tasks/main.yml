@@ -1,6 +1,12 @@
 ---
 - import_tasks: xsession.yml
 
+- name: Gather package facts
+  package_facts:
+    manager: auto
+
 - import_tasks: gnome.yml
+  when: "'ubuntu-gnome-desktop' in ansible_facts.packages or 'gnome' in ansible_facts.packages or 'gnome-core' in ansible_facts.packages or 'gnome-shell' in ansible_facts.packages"
 
 - import_tasks: xfce4.yml
+  when: "'xubuntu-desktop' in ansible_facts.packages or 'xfce4' in ansible_facts.packages"
