@@ -21,7 +21,7 @@ jobs:
       matrix:
         ansible-version:
           - '2.8.16'
-          - '2.8.2'
+          - '2.10.5'
 
     env:
       MOLECULEW_ANSIBLE: ${{ matrix.ansible-version }}
