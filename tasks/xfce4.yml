@@ -125,3 +125,4 @@
     owner: root
     group: root
     mode: 'u=rw,go=r'
+  when: not ansible_check_mode
