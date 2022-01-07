@@ -11,12 +11,6 @@ default_web_browser_custom_config_dir: /etc/xdg/ansible-default-web-browser
 # The directory where you can customize the Xsession config
 default_web_browser_xsession_d_dir: /etc/X11/Xsession.d
 
-# The directory where custom Xfce4 config is stored
-default_web_browser_custom_xfce4_dir: '{{ default_web_browser_custom_config_dir }}/xfce4'
-
-# The directory where custom Xfce4 helpers stored
-default_web_browser_custom_xfce4_helpers_dir: '{{ default_web_browser_custom_xfce4_dir }}/helpers'
-
 # The the browser desktop file
 default_web_browser_desktop_file: '{{ default_web_browser_applications_dir }}/{{ default_web_browser }}.desktop'
 
