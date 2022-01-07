@@ -2,5 +2,3 @@
 - import_tasks: xsession.yml
 
 - import_tasks: gnome.yml
-
-- import_tasks: xfce4.yml
