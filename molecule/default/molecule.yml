@@ -15,7 +15,7 @@ platforms:
   - name: ansible-role-default-web-browser-ubuntu-min
     image: ubuntu:16.04
   - name: ansible-role-default-web-browser-ubuntu-max
-    image: ubuntu:18.04
+    image: ubuntu:20.04
 
 provisioner:
   name: ansible
