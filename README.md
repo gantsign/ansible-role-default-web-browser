@@ -5,7 +5,7 @@ Ansible Role: Default Web Browser
 [![Ansible Galaxy](https://img.shields.io/badge/ansible--galaxy-gantsign.default--web--browser-blue.svg)](https://galaxy.ansible.com/gantsign/default-web-browser)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/gantsign/ansible-role-default-web-browser/master/LICENSE)
 
-This role sets the default web browser for Ubuntu Unity and Gnome.
+This role sets the default web browser for the Gnome desktop.
 
 Requirements
 ------------
@@ -20,8 +20,6 @@ Requirements
 * Supported desktop
 
     * Gnome
-
-    * Ubuntu Unity
 
 * Installed web browser
 

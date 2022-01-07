@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   author: John Freeman
-  description: Role for setting the default web browser for Ubuntu Unity and Gnome.
+  description: Role for setting the default web browser for Gnome desktop.
   company: GantSign Ltd.
   license: MIT
   min_ansible_version: 2.8
@@ -12,7 +12,6 @@ galaxy_info:
         - bionic
   galaxy_tags:
     - ubuntu
-    - unity
     - gnome
     - browser
     - system
