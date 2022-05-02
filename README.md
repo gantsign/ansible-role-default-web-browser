@@ -10,7 +10,7 @@ This role sets the default web browser for the Gnome desktop.
 Requirements
 ------------
 
-* Ansible >= 2.8
+* Ansible >= 2.9
 
 * Ubuntu
 
